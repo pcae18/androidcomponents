@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Curso Android 21.11.18</string>
+    <string name="text_string">Esto es una prueba de mi primer string</string>
+    <string name="text_color_layout">Add friend!</string>
+    <string name="text_default_change_image">No has seleccionado nada.</string>
+
+    <string name="message_error_required_frase">Es necesario ingresar la frase del personaje</string>
+    <string name="message_error_required_email">Es necesario ingresar el correo electrónico</string>
+    <string name="message_error_required_password">Es necesario ingresar la contraseña</string>
+
+    <string name="message_error_invalid_email">El correo electrónico ingresado es inválido</string>
+    <string name="message_error_invalid_password">La contraseña ingresada es inválida</string>
+
+    <string name="message_successfull_login">Has inciado sesión.</string>
+
+    <!--Menú Profile Activity -->
+    <string name="menu_inicio"> Inicio </string>
+    <string name="menu_configuracion"> Configuración </string>
+    <string name="menu_cerrar_sesion"> Cerrar sesión </string>
+
+
+    <string-array name="country_arrays">
+        <item>México🇲🇽</item>
+        <item>Malaysia 🇲🇾</item>
+        <item>United States 🇺🇸</item>
+        <item>Indonesia 🇮🇩</item>
+        <item>France 🇫🇷</item>
+        <item>Italy 🇮🇹</item>
+        <item>Singapore 🇸🇬</item>
+        <item>New Zealand 🇳🇿</item>
+    </string-array>
+</resources>
