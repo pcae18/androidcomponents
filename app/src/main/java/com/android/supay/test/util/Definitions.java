@@ -24,6 +24,8 @@ public class Definitions {
     public static Long MAX_SIZE_PASSWORD = 8L;
 
     public static String KEY_PROFILE = "profile";
+    public static String FRAGMENT_ARG_FLAG = "fragment_arg_flag";
+
 
 
     public static final Pattern VALID_EMAIL_ADDRESS_REGEX =

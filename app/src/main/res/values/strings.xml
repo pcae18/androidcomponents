@@ -18,6 +18,9 @@
     <string name="menu_configuracion"> Configuración </string>
     <string name="menu_cerrar_sesion"> Cerrar sesión </string>
 
+    <string name="red">RED</string>
+    <string name="blue">BLUE</string>
+    <string name="green">GREEN</string>
 
     <string-array name="country_arrays">
         <item>México🇲🇽</item>
