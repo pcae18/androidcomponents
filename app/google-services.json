@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "596219296561",
+    "firebase_url": "https://notificaciones-ddffb.firebaseio.com",
+    "project_id": "notificaciones-ddffb",
+    "storage_bucket": "notificaciones-ddffb.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:596219296561:android:d28fdadba11c09f1",
+        "android_client_info": {
+          "package_name": "com.android.supay.test"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "596219296561-v2r0ir16kbri7nf3rtd75m6r5avm87qn.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.android.supay.test",
+            "certificate_hash": "d530fd2e554f165fe0adfb2750d22ad8babe4127"
+          }
+        },
+        {
+          "client_id": "596219296561-dl4a6ramh50am2goetvbc825pl72n7em.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCWNRZVMXNWBGSV9b01pGyBXwhGNtiG1ws"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "596219296561-dl4a6ramh50am2goetvbc825pl72n7em.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

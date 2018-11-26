@@ -9,4 +9,5 @@ public class KeyDefinitions {
     public static String EMAIL = "email";
 
 
+    public static String MESSAGE = "message";
 }

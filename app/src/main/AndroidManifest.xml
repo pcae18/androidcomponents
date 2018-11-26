@@ -5,12 +5,12 @@
     <uses-permission android:name="android.permission.INTERNET" />
 
     <application
+        android:name=".AndroidTest"
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:name=".AndroidTest"
         android:theme="@style/AppTheme">
         <activity
             android:name=".MainActivity"
@@ -37,18 +37,34 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".practicaViewPager.FormAltaUsuarioActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".practicaViewPager.ViewPagerAltaUsuarioActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".db.RealmRecyclerSampleActivity">
+        <activity android:name=".db.RealmRecyclerSampleActivity" />
+        <activity android:name=".db.EditShopActivity" />
+        <activity
+            android:name=".notificationsample.NotificationsActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".notificationsample.FirstActivity"
+            android:screenOrientation="portrait" />
+        <activity
+            android:name=".webview.WebViewSampleActivity"
+            android:screenOrientation="portrait">
+
+        </activity>
+        <activity android:name=".mediaplayer.MusicActivity"
+            android:screenOrientation="portrait">
+        </activity>
+        <activity android:name=".mediaplayer.VideoActivity"
+            android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".db.EditShopActivity"></activity>
     </application>
 
 </manifest>

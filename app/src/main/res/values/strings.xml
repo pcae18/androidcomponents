@@ -24,6 +24,8 @@
     <string name="frm_save"> Guardar </string>
     <string name="frm_end"> Finalizar </string>
 
+    <string name="frm_hint_messages"> Ingresa un mensaje. </string>
+
 
     <!--Menú Profile Activity -->
     <string name="menu_inicio"> Inicio </string>
@@ -38,6 +40,8 @@
     <string name="red">RED</string>
     <string name="blue">BLUE</string>
     <string name="green">GREEN</string>
+    <string name="empty_input_message">No ingresaaste nada en el mensaje</string>
+    <string name="insert_a_message_to_send">Ingresa un mensaje a enviar</string>
 
     <string-array name="country_arrays">
         <item>México🇲🇽</item>
