@@ -155,6 +155,24 @@ public class Util {
     }
 
     /**
+     *
+     * @param activity
+     * @param aClass
+     * @param parameters
+     */
+    public static void changeActivity( Activity activity, Class aClass, HashMap<String, String> parameters, boolean finish ){
+        Intent intent = new Intent( activity, aClass );
+        for(Map.Entry<String, String> entry : parameters.entrySet() ){
+            intent.putExtra( entry.getKey( ), entry.getValue( ) );
+
+        }
+        activity.startActivity(intent);
+        if(finish){
+            activity.finish();
+        }
+    }
+
+    /**
      * Método que genera números random.
      * @return
      */

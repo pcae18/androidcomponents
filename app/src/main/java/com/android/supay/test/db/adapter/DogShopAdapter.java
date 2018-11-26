@@ -17,15 +17,16 @@ import java.util.ArrayList;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
+import io.realm.RealmList;
 
 public class DogShopAdapter extends RecyclerView.Adapter<DogShopAdapter.ViewHolderAdapter> {
 
-    ArrayList<DogShop> dogShops;
+    RealmList<DogShop> dogShops;
     Context adapterContext;
     DogShopClick dogShopClick;
     DogShopLongClick dogShopLongClick;
 
-    public DogShopAdapter(ArrayList<DogShop> dogShops, Context adapterContext, DogShopClick dogShopClick, DogShopLongClick dogShopLongClick) {
+    public DogShopAdapter(RealmList<DogShop> dogShops, Context adapterContext, DogShopClick dogShopClick, DogShopLongClick dogShopLongClick) {
         this.dogShops = dogShops;
         this.adapterContext = adapterContext;
         this.dogShopClick = dogShopClick;

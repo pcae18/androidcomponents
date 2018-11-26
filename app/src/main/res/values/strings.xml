@@ -8,6 +8,9 @@
     <string name="message_error_required_email">Es necesario ingresar el correo electrónico</string>
     <string name="message_error_required_password">Es necesario ingresar la contraseña</string>
 
+    <string name="message_error_required_name">Es necesario ingresar el nombre</string>
+    <string name="message_error_required_address">Es necesario ingresar la dirección</string>
+
     <string name="message_error_invalid_email">El correo electrónico ingresado es inválido</string>
     <string name="message_error_invalid_password">La contraseña ingresada es inválida</string>
 
@@ -19,6 +22,7 @@
     <string name="frm_email"> Correo </string>
     <string name="frm_address"> Dirección </string>
     <string name="frm_save"> Guardar </string>
+    <string name="frm_end"> Finalizar </string>
 
 
     <!--Menú Profile Activity -->
