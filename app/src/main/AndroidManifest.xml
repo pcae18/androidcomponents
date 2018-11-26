@@ -33,18 +33,22 @@
         <activity android:name=".viewpager.ViewPagerActivity" />
         <activity
             android:name=".goodviewpager.GoodViewPagerActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".practicaViewPager.FormAltaUsuarioActivity"
             android:screenOrientation="portrait">
+        </activity>
+        <activity
+            android:name=".practicaViewPager.ViewPagerAltaUsuarioActivity"
+            android:screenOrientation="portrait" />
+        <activity android:name=".db.RealmRecyclerSampleActivity"
+            >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".practicaViewPager.ViewPagerAltaUsuarioActivity"
-            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>

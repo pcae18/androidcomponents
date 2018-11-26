@@ -153,4 +153,37 @@ public class Util {
         activity.startActivity(intent);
         activity.finish();
     }
+
+    /**
+     * Método que genera números random.
+     * @return
+     */
+    public static int getRandomNumber(){
+        return  (int)(Math.random()*((3-1)+1))+1;
+    }
+
+
+    /**
+     * Método que genera id random.
+     * @return
+     */
+    public static int getRandomID(){
+        return  (int)(Math.random()*((50000-1)+1))+1;
+    }
+
+    public static String setRandomImage(){
+        switch (Util.getRandomNumber()){
+            case 1:
+                return "http://weddingwoof.com/wp-content/uploads/2012/06/dogstore-1.jpg";
+            case 2:
+                return "https://barkpost.com/wp-content/uploads/2014/11/lavadogshawaii.jpg";
+            case 3:
+                return "https://barkpost.com/wp-content/uploads/2014/11/lavadogshawaii.jpg";
+            case 4:
+                return Definitions.SRC_IMG_ADVENGERS_IRON_MAN;
+            case 5:
+                return Definitions.SRC_IMG_ADVENGERS_MAPACHE;
+        }
+        return "";
+    }
 }
