@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">Curso Android 21.11.18</string>
+    <string name="app_name">Gestión Servicios</string>
     <string name="text_string">Esto es una prueba de mi primer string</string>
     <string name="text_color_layout">Add friend!</string>
     <string name="text_default_change_image">No has seleccionado nada.</string>
@@ -13,10 +13,23 @@
 
     <string name="message_successfull_login">Has inciado sesión.</string>
 
+    <!--Formularios-->
+    <string name="frm_name"> Nombre </string>
+    <string name="frm_last_name"> Apellido </string>
+    <string name="frm_email"> Correo </string>
+    <string name="frm_address"> Dirección </string>
+    <string name="frm_save"> Guardar </string>
+
+
     <!--Menú Profile Activity -->
     <string name="menu_inicio"> Inicio </string>
     <string name="menu_configuracion"> Configuración </string>
     <string name="menu_cerrar_sesion"> Cerrar sesión </string>
+
+    <!--Menú Alta usuario-->
+    <string name="menu_tareas"> Tareas </string>
+    <string name="menu_datos_usuario"> Datos Usuario </string>
+    <string name="menu_direccion"> Dirección </string>
 
     <string name="red">RED</string>
     <string name="blue">BLUE</string>

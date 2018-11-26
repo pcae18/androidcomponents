@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item android:id="@+id/action_notification1"
+        android:icon="@drawable/ic_menu"
+        android:title="action_notification"
+        app:showAsAction="always">
+                <menu>
+            <item android:id="@+id/inicio"
+                android:title="@string/menu_inicio"
+                android:icon="@android:drawable/ic_dialog_dialer"
+                android:orderInCategory="1"/>
+
+            <item android:id="@+id/tareas"
+                android:title="@string/menu_tareas"
+                android:icon="@drawable/ic_settings_work_tool"
+                android:orderInCategory="2"
+                />
+            <item android:id="@+id/datosUsuario"
+                android:title="@string/menu_datos_usuario"
+                android:icon="@drawable/ic_man_user"
+                android:orderInCategory="3"
+                />
+            <item android:id="@+id/direccion"
+                android:title="@string/menu_direccion"
+                android:icon="@android:drawable/ic_dialog_map"
+                android:orderInCategory="4"
+                />
+        </menu>
+    </item>
+</menu>

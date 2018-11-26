@@ -14,6 +14,11 @@ import com.android.supay.test.util.Util;
 import butterknife.BindView;
 import butterknife.ButterKnife;
 
+/**
+ * {@link android.app.Activity} que implementa
+ * como un {@link ViewPager}.
+ *
+ */
 public class GoodViewPagerActivity extends AppCompatActivity implements ViewPager.OnPageChangeListener{
 
     @BindView(R.id.viewPager)
@@ -32,7 +37,7 @@ public class GoodViewPagerActivity extends AppCompatActivity implements ViewPage
         GoodPagerAdapter goodPagerAdapter = new GoodPagerAdapter(getSupportFragmentManager());
         goodPagerAdapter.addFragment(FragmentOne.newInstance(),FragmentOne.TAG);
         goodPagerAdapter.addFragment(FragmentTwo.newInstance("Prueba de enviar datos a fragments"),
-                FragmentTwo.TAG);
+                                        FragmentTwo.TAG);
         goodPagerAdapter.addFragment(FragmentThree.newInstance(),FragmentThree.TAG);
         viewPager.setAdapter(goodPagerAdapter);
         viewPager.addOnPageChangeListener(this);

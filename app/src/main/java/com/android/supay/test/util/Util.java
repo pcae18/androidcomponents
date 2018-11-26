@@ -144,10 +144,10 @@ public class Util {
      * @param aClass
      * @param parameters
      */
-    public static void changeActivity( Activity activity, Class aClass, HashMap<String, Object> parameters ){
+    public static void changeActivity( Activity activity, Class aClass, HashMap<String, String> parameters ){
         Intent intent = new Intent( activity, aClass );
-        for(Map.Entry<String, Object> entry : parameters.entrySet() ){
-            intent.putExtra( entry.getKey( ), entry.getValue( ).toString() );
+        for(Map.Entry<String, String> entry : parameters.entrySet() ){
+            intent.putExtra( entry.getKey( ), entry.getValue( ) );
 
         }
         activity.startActivity(intent);

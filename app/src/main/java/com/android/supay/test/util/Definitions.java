@@ -35,5 +35,5 @@ public class Definitions {
     public static String SRC_IMG_ADVENGERS_MAPACHE = "https://i1.wp.com/collectible506.com/wp-content/uploads/2018/03/20180309_100753.jpg?zoom=2.625&resize=412%2C228&ssl=1";
     public static String SRC_IMG_ADVENGERS_IRON_MAN = "http://mouse.latercera.com/wp-content/uploads/2017/10/avengers-ironman.jpg";
     public static String SRC_IMG_ADVENGERS_SPIDERMAN = "https://emptylighthouse-production.s3-us-west-2.amazonaws.com/s3fs-public/styles/728x_hero/public/field/image/30740878_10155432528682344_9083589659031764992_n.jpg?itok=-Jn0xdbw";
-
+    public static String SRC_IMG_MAP_ADDRESS = "https://ep01.epimg.net/tecnologia/imagenes/2017/10/11/actualidad/1507722505_765166_1507722864_miniatura_normal.jpg";
 }

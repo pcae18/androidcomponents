@@ -17,8 +17,6 @@ public class GoodPagerAdapter extends FragmentPagerAdapter {
 
     public GoodPagerAdapter( FragmentManager manager ) {
         super(manager);
-        Util.showLog("Adapter", manager.toString( ) );
-
     }
 
     @Override

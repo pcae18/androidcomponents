@@ -26,13 +26,16 @@
         <activity android:name=".avengerscomponent.AvengerActivity" />
         <activity
             android:name=".viewlogincomponent.LoginActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".viewlogincomponent.ProfileActivity"
             android:screenOrientation="portrait" />
-        <activity android:name=".viewpager.ViewPagerActivity">
-        </activity>
-        <activity android:name=".goodviewpager.GoodViewPagerActivity"
+        <activity android:name=".viewpager.ViewPagerActivity" />
+        <activity
+            android:name=".goodviewpager.GoodViewPagerActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".practicaViewPager.FormAltaUsuarioActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -40,6 +43,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity android:name=".practicaViewPager.ViewPagerAltaUsuarioActivity"
+            android:screenOrientation="portrait"></activity>
     </application>
 
 </manifest>
