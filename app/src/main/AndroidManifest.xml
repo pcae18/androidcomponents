@@ -51,13 +51,15 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".webview.WebViewSampleActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mediaplayer.MusicActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".mediaplayer.VideoActivity"
             android:screenOrientation="portrait">
-
         </activity>
-        <activity android:name=".mediaplayer.MusicActivity"
-            android:screenOrientation="portrait">
-        </activity>
-        <activity android:name=".mediaplayer.VideoActivity"
+        <activity android:name=".practicaRecycler.DCRecyclerActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
