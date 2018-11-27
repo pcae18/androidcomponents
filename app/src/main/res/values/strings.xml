@@ -53,4 +53,5 @@
         <item>Singapore 🇸🇬</item>
         <item>New Zealand 🇳🇿</item>
     </string-array>
+    <string name="title_activity_maps">Map</string>
 </resources>

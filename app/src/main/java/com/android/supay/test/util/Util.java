@@ -204,4 +204,11 @@ public class Util {
         }
         return "";
     }
+
+
+    public static String getEmojiByUnicode(int unicode){
+        return new String(Character.toChars(unicode));
+    }
+
+    //public static ShowAlert
 }
