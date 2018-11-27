@@ -3,6 +3,8 @@
     package="com.android.supay.test">
 
     <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.RECEIVE_BOOT_COMPLETED" />
+
 
     <application
         android:name=".AndroidTest"
@@ -60,12 +62,16 @@
             android:screenOrientation="portrait" />
         <activity
             android:name=".practicaRecycler.DCRecyclerActivity"
-            android:screenOrientation="portrait"></activity>
+            android:screenOrientation="portrait" />
         <activity
             android:name=".animations.AnimationSampleActivity"
+            android:screenOrientation="portrait"></activity>
+        <activity
+            android:name=".animations.LottieSampleActivity"
             android:screenOrientation="portrait">
+
         </activity>
-        <activity android:name=".animations.LottieSampleActivity"
+        <activity android:name=".jobscheduller.JobSchedullerActivity"
             android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -73,6 +79,8 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <service android:name=".jobscheduller.ExampleJobService"
+            android:permission="android.permission.BIND_JOB_SERVICE"></service>
     </application>
 
 </manifest>
