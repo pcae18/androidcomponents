@@ -12,10 +12,17 @@ import android.widget.Button;
 import com.android.supay.test.R;
 import com.android.supay.test.util.Definitions;
 import com.android.supay.test.util.Util;
+import com.android.supay.test.viewlogincomponent.ws.Client;
+import com.android.supay.test.viewlogincomponent.ws.ServiceGenerator;
+import com.android.supay.test.viewlogincomponent.ws.model.LoginAuthResponse;
+import com.android.supay.test.ws.model.StarWarsCharacterResponse;
 
 import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
+import retrofit2.Call;
+import retrofit2.Callback;
+import retrofit2.Response;
 
 /**
  * {@Link android.app.Activity} que muestra
@@ -55,7 +62,33 @@ public class LoginActivity extends AppCompatActivity {
         email = textInputEditTextEmail.getText().toString();
         password = textInputEditTextPassword.getText().toString();
         if( validInputs( ) ) {
-            successLogin( );
+
+            Client client = ServiceGenerator.createService(Client.class);
+            client.login(email, password)
+                    .enqueue(new Callback<LoginAuthResponse>() {
+                        @Override
+                        public void onResponse(Call<LoginAuthResponse> call, Response<LoginAuthResponse> response) {
+                            try{
+                                LoginAuthResponse loginResponse = response.body();
+                                Util.showLog(TAG, loginResponse.toString() );
+                                if( loginResponse.success == 1){
+                                    successLogin( );
+
+                                }else{
+                                    Util.showToast( "Usuario o contraseña incorrectos", getApplicationContext( ) );
+                                }
+                            }catch(Exception e){
+                                e.printStackTrace();
+                            }
+                        }
+
+                        @Override
+                        public void onFailure(Call<LoginAuthResponse> call, Throwable t) {
+                            t.printStackTrace();
+                            Util.showToast( "Servicio no disponible.", getApplicationContext( ) );
+                        }
+                    });
+
         }
 
     }

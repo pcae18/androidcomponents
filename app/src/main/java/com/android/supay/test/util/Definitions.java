@@ -21,7 +21,7 @@ public class Definitions {
     public static String MESSAGE_ERROR_REQUIRED_PASSWORD = "Es necesario ingresar la contraseña.";
 
     public static Long MIN_SIZE_PASSWORD = 2L;
-    public static Long MAX_SIZE_PASSWORD = 8L;
+    public static Long MAX_SIZE_PASSWORD = 30L;
 
     public static String KEY_PROFILE = "profile";
     public static String FRAGMENT_ARG_FLAG = "fragment_arg_flag";

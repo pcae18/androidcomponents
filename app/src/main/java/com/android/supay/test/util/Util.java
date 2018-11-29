@@ -158,6 +158,30 @@ public class Util {
      *
      * @param activity
      * @param aClass
+     */
+    public static void changeActivity( Activity activity, Class aClass ){
+        Intent intent = new Intent( activity, aClass );
+        activity.startActivity(intent);
+        activity.finish();
+    }
+
+    /**
+     *
+     * @param activity
+     * @param aClass
+     */
+    public static void changeActivity( Activity activity, Class aClass, boolean finish ){
+        Intent intent = new Intent( activity, aClass );
+        activity.startActivity(intent);
+        if(finish){
+            activity.finish();
+        }
+    }
+
+    /**
+     *
+     * @param activity
+     * @param aClass
      * @param parameters
      */
     public static void changeActivity( Activity activity, Class aClass, HashMap<String, String> parameters, boolean finish ){
